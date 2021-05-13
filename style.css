@@ -1,0 +1,125 @@
+.main{
+    background: skyblue;
+    padding: 25px;
+    max-width: 2260px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid black;
+    position: relative;
+}
+.input{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 30px 0px 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+#addNewTask{
+    padding: 3px 8px;
+}
+input[type="submit"], .delete{
+    background-color: green;
+    color: white;
+    padding: 3px 8px;
+    margin-top: 10px;
+}
+#pendingTask, #completedTask{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.taskBox{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 15px 0;
+    width: 46%;
+}
+.taskBox h3{
+    text-align: center;
+}
+.pending{
+    border: 2px solid red;
+    float: left;
+}
+.completed{
+    border: 2px solid green;
+    float: right;
+}
+.pendingTaskItems, .completedTaskItems{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.delete{
+    float: right;
+    background-color: red;
+    margin-top: 0px;
+}
+.credits{
+    position: absolute;
+    top: 0%;
+    left: 43%;
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.message{
+    color: white;
+    padding: 4px 8px;
+}
+@media (max-width: 1024px){
+    .credits{
+        left: 42%;
+    }
+}
+@media (max-width: 1024px){
+    .taskBox{
+        width: 45%;
+    }
+    .credits{
+        left: 35%;
+    }
+}
+@media (max-width: 768px){
+    .taskBox{
+        width: 43%;
+    }
+}
+@media (max-width: 425px){
+    .taskBox{
+        width: 37%;
+    }
+    .completedTaskItems{
+        padding: 10px 0px;
+    }
+    .credits{
+        left: 22%;
+    }
+}
+@media (max-width: 375px){
+    .taskBox{
+        width: 35%;
+    }
+    .completedTaskItems{
+        padding: 10px 22px 30px;
+    }
+    .credits{
+        left: 18%;
+    }
+}
+@media (max-width: 320px){
+    .taskBox{
+        width: 32%;
+    }
+    .completedTaskItems{
+        padding: 10px 10px 30px;
+    }
+    .credits{
+        left: 12%;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="input">
+            <h2>To Do List</h2>
+            <form id="taskForm">
+                <input type="text" name="task" id="addNewTask"/>
+                <input type="submit" name="submit" value="Add Task"/>
+                <span class="message"></span>
+            </form>            
+        </div>
+        <div class="pending taskBox">
+            <h3>Pending Task</h3>
+            <ul id="pendingTask">
+                    
+            </ul>
+        </div>
+        <div class="completed taskBox">
+            <h3>Completed Task</h3>
+            <ul id="completedTask">
+                    
+            </ul>
+        </div>
+        <div class="credits">
+            <h3>Developed By <a href="https://iamofikhan.wordpress.com/" target="_blank">&#169 Ofi Khan</a></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
